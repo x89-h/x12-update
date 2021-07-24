@@ -5,7 +5,7 @@
 		data.map(e=>e.assets.map(e=>e.name));
 		
 		data.forEach(e => {
-			document.body.innerHTML += "<a href='" + e.assets[1].url + "'>" + e.assets[1].name + "</a>&#9;&#9;&#9;&#9;10MB<br><br>";
+			document.body.innerHTML += "<a href='" + e.assets[1].url + "'>" + e.assets[1].name + "</a>&#9;&#9;&#9;&#9;"+e.assets[1].size+"KB<br><br>";
 		})
 	});
 </script>
