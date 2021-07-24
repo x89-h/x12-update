@@ -1,5 +1,11 @@
 <script>
 	let url = "https://api.github.com/repos/x89-h/x12-update/releases";
 	
-	fetch(url).then(res => res.json()).then(data => console.log(data));
+	fetch(url).then(res => res.json()).then(data => {
+		data.map(e=>e.assets.map(e=>e.name));
+		
+		data.forEach(e => {
+			document.body.innerHTML += e.assets[1].name + "<br><br>";
+		})
+	});
 </script>
