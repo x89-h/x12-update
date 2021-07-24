@@ -1,10 +1,5 @@
-<iframe
-	src="data.json"
-	style="
-		border: none;
-		margin: -8px 0 0 -8px;
-		width: 100vw;
-		height: 100vh;
-		position: fixed;
-	"
-></iframe>
+<script>
+	let url = "https://api.github.com/repos/x89-h/x12-update/releases";
+	
+	fetch(url).then(res => res.json()).then(data => console.log(data));
+</script>
