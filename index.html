@@ -4,10 +4,10 @@
 	fetch(url).then(res => res.json()).then(data => {
 		data.map(e=>e.assets.map(e=>e.name));
 		
-		let html = "<pre>";
+		let html = "<pre><h3>Downloads</h3>";
 		
 		data.forEach(e => {
-			html += "<a href='" + e.assets[1].url + "'>update_channel/" + e.assets[1].name + "</a>&#9;&#9;&#9;&#9;<b>"+e.assets[1].size+"</b>KB<br><br>";
+			html += "<a href='" + e.assets[1].url + "'>update_channel/" + e.assets[1].name + "</a>&#9;&#9;&#9;&#9;<i>"+e.assets[1].size+"</i>KB<br><br>";
 		});
 		
 		document.body.innerHTML += html + "</pre>";
