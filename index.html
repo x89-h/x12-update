@@ -7,7 +7,7 @@
 		let html = "<pre><h3>Downloads</h3>";
 		
 		data.forEach(e => {
-			html += "<a href='" + e.assets[1].url + "'>update_channel/" + e.assets[1].name + "</a>&#9;&#9;&#9;&#9;<i>"+e.assets[1].size+"</i>KB&#9;&#9;<i>"+e.assets[1].download_count+"</i> downloads<br><br>";
+			html += "<a href='" + e.assets[1].url + "'>update_channel/" + e.assets[1].name + "</a>&#9;&#9;&#9;&#9;<i>"+e.assets[1].size+"</i>KB&#9;&#9;<i>"+e.assets[1].download_count+"</i>#9;downloads<br><br>";
 		});
 		
 		document.body.innerHTML += html + "</pre>";
